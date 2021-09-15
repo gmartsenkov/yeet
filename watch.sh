@@ -1,1 +1,1 @@
-ls **/*.{mustache,json} | entr -r cargo run
+ls **/*.{hbs,json} | entr -r cargo run
