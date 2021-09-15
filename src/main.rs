@@ -5,8 +5,7 @@ use std::fs;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let reg = Handlebars::new();
-    let template =
-        fs::read_to_string("design/template.html.mustache").expect("Could not load template");
+    let template = include_str!("design/template.html.mustache");
 
     // render without register
     let data = fs::read_to_string("data.json")?;
@@ -14,7 +13,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     fs::write(
         "output.html",
-        reg.render_template(template.as_str(), data_json)?,
+        reg.render_template(template, data_json)?,
     )?;
 
     Ok(())
