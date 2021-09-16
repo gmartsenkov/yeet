@@ -1,5 +1,8 @@
 {
-    "name": "Bob",
+    "avatar": "https://avatars.githubusercontent.com/u/7080637?v=4",
+    "name": "Georgi Martsenkov",
+    "email": "georgi.martsenkov@email.com",
+    "website": "https://gmartsenkov.github.io",
     "sections": [
         {
             "type": "experiences",

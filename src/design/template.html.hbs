@@ -11,15 +11,24 @@
     body { font-family: 'Raleway', sans-serif; }
   </style>
 </head>
-<body class="bg-white font-sans max-w-screen-lg m-auto">
-    <div class="border-2 rounded text-gray-600 mb-3 p-4">
-        {{name}}
-    </div>
-
-    <div class="grid grid-cols-2 gap-3">
-      {{#each sections}}
-        {{> (lookup this "type") }}
-      {{/each}}
+<body class="bg-gray-100 font-sans max-w-screen-lg m-auto">
+    <div class="border-2 rounded text-gray-600 mt-10 mb-3 p-4 divide-y bg-white shadow-md">
+      <div class="grid grid-rows-3 grid-flow-col mb-3 text-black">
+        <div class="row-span-3 w-32">
+          <img src="{{avatar}}">
+        </div>
+        <div class="col-span-12 font-thin text-3xl">{{name}}</div>
+        <div class="col-span-12 font-thin text-base">
+          Email: <a href="mailto:{{email}}" class="font-light">{{email}}</a>
+          <br>
+          Website: <a href="{{website}}" class="font-light">{{website}}</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-3 pt-5">
+        {{#each sections}}
+          {{> (lookup this "type") }}
+        {{/each}}
+      </div>
     </div>
 </body>
 </html>
