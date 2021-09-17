@@ -18,6 +18,23 @@
                     "description": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
                 }
             ]
+        },
+        {
+            "type": "education",
+            "data": [
+                {
+                    "degree": "BSc in Computer Science",
+                    "institution": "at University of Oxford",
+                    "start_date": "2015",
+                    "end_date": "2019"
+                },
+                {
+                    "degree": "IT",
+                    "institution": "at Hall Green College",
+                    "start_date": "2012",
+                    "end_date": "2014"
+                }
+            ]
         }
     ]
 }
