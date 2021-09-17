@@ -15,6 +15,10 @@ fn main() -> Result<(), Box<dyn Error>> {
         "education",
         include_str!("design/partials/education.hbs"),
     )?;
+    reg.register_template_string(
+        "about",
+        include_str!("design/partials/about.hbs"),
+    )?;
 
     // render without register
     let data = fs::read_to_string("data.json")?;
