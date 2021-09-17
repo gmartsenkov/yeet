@@ -12,7 +12,7 @@
   </style>
 </head>
 <body class="bg-gray-100 font-sans max-w-screen-lg m-auto">
-    <div class="border-2 rounded text-gray-600 mt-10 mb-3 p-4 divide-y bg-white shadow-md">
+    <div class="border-2 rounded text-gray-600 my-10 p-4 divide-y bg-white shadow-md">
       <div class="grid grid-rows-3 grid-flow-col mb-3 text-black">
         <div class="row-span-3 w-32">
           <img src="{{avatar}}">
@@ -24,7 +24,7 @@
           Website: <a href="{{website}}" class="font-light">{{website}}</a>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-3 pt-5">
+      <div class="grid grid-cols-2 gap-3 pt-5 pb-10">
         {{#each sections}}
           {{> (lookup this "type") }}
         {{/each}}
